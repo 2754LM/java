@@ -10,7 +10,7 @@ class BossCrawler:
         self.page = ChromiumPage(9222)
         self.page.set.window.max()
         self.page.set.user_agent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
-        self.json_file = Path('BossData_raw.json')
+        self.json_file = Path('data/raw/raw_data.json')
         self._init_json_file()
 
     def _init_json_file(self):
@@ -48,7 +48,6 @@ class BossCrawler:
         print(f"当前城市数据已追加到 {self.json_file}")
 
     def _append_to_json(self, new_jobs):
-        """将新数据追加到JSON文件"""
         try:
             with open(self.json_file, 'r', encoding='utf-8') as f:
                 existing_data = json.load(f)
