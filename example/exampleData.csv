@@ -1,2 +1,2 @@
-jobName,cityName,minSalary,maxSalary,minExp,maxExp,skills,minSize,maxSize,degree
-高级java开发,太原,6000,8000,3,5,"Java,Spring,MySQL",20,99,本科
+jobName,cityName,minSalary,maxSalary,minExp,maxExp,degree,skills,minSize,maxSize,brandIndustry
+高级java开发,太原,6000,8000,3,5,本科,"Java,Spring,MySQL",20,99,医疗
